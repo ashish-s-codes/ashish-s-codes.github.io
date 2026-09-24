@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy: Add to Notes</title>
+  <meta name="description" content="Privacy policy for the Add to Notes Chrome extension." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="site.css" />
+</head>
+<body>
+  <!-- Published copy of docs/PRIVACY_POLICY.md. Keep the two in sync. -->
+  <header class="site">
+    <div class="wrap">
+      <img src="icon128.png" alt="" />
+      <a class="brand" href="./">Add to Notes</a>
+      <nav>
+        <a href="./">Home</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Privacy Policy for Add to Notes</h1>
+    <p class="muted">Last updated: 23 September 2026</p>
+
+    <p>Add to Notes is a Chrome extension that saves text you select on a web page to a Google Doc in your own Google account, together with the page's title and link, the date and time, and a short plain-language explanation written by an AI provider you choose.</p>
+
+    <div class="card">
+      <strong>The short version:</strong> Add to Notes has no servers of its own. We (the developer) never receive, see or store your notes, your API keys or anything else about you. Your notes go from your browser directly to your own Google Doc, and, if you set up AI explanations, directly to the AI provider you picked.
+    </div>
+
+    <h2>What data the extension handles, and why</h2>
+    <p><strong>Only when you save a note</strong> (by choosing "Add to my notes" from the right-click menu or pressing the keyboard shortcut), the extension reads from the current tab:</p>
+    <ul>
+      <li>the text you selected, including its formatting (bold, italics, links, lists),</li>
+      <li>the page's title and web address (URL),</li>
+      <li>on YouTube, the current playback time, so the saved link jumps back to that moment.</li>
+    </ul>
+    <p>It does not read pages you don't save from, and it does not track your browsing.</p>
+    <p>That information is used as follows:</p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Data</th><th>Sent to</th><th>Why</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Selected text, page title, page URL, date and time</td><td><strong>Google Docs</strong>, into a document in <em>your</em> Google account</td><td>This is the note itself.</td></tr>
+          <tr><td>Selected text and page title (not the URL)</td><td><strong>The AI provider you chose</strong> in Settings</td><td>To write the topic title and short explanation. Not sent if you haven't set up AI.</td></tr>
+          <tr><td>Your AI provider's API key</td><td>Only that provider</td><td>To authorise requests to your own AI account.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Google account data</h2>
+    <p>When you click "Connect Google account", Chrome asks you to allow access with a single, limited permission: <strong>"See, edit, create and delete only the specific Google Drive files that you use with this app"</strong> (<code>drive.file</code>). With it, the extension:</p>
+    <ul>
+      <li>creates Google Docs for your notes, when you ask it to,</li>
+      <li>adds notes to those documents,</li>
+      <li>lists the documents it created, so you can switch between them.</li>
+    </ul>
+    <p>It <strong>cannot</strong> see or open any other file in your Google Drive. It shows the email address of the Google account signed in to Chrome ("Connected as …"); that address stays on your device and is not sent anywhere by the extension. Chrome manages the sign-in itself. The extension never sees your Google password.</p>
+    <p>Add to Notes' use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Specifically: data from Google APIs is used only to provide the note-saving features described here, is not transferred to anyone else (except the AI provider <em>you</em> choose, as described above, as part of that feature), is not used for advertising, and is not read by any human.</p>
+
+    <h2>AI providers (optional)</h2>
+    <p>Explanations are written by the AI provider you select in Settings, using <strong>your own API key</strong>:</p>
+    <ul>
+      <li>Anthropic (Claude): <a href="https://www.anthropic.com/legal/privacy">privacy policy</a></li>
+      <li>OpenAI: <a href="https://openai.com/policies/privacy-policy">privacy policy</a></li>
+      <li>Google (Gemini API): <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a> and <a href="https://policies.google.com/privacy">Google privacy policy</a></li>
+      <li>OpenRouter, which passes your request on to the model you pick: <a href="https://openrouter.ai/privacy">privacy policy</a></li>
+    </ul>
+    <p>If you turn on "Fallback to a second provider", a note whose first provider fails is also sent to the second provider you chose. That provider's policy then applies too.</p>
+    <p>Your note text is handled under that provider's own terms and privacy policy, which you agreed to when you created your API key. Some providers' free tiers may use the text you send to improve their products. Check your provider's terms if this matters to you. Chrome asks your permission before the extension can contact each provider for the first time.</p>
+
+    <h2>What is stored on your device</h2>
+    <p>The following is kept in your browser's local extension storage, on your computer only. It is not synced and not sent to us:</p>
+    <ul>
+      <li>your settings: chosen AI provider, API keys, model names, explanation length and language, and which document is active;</li>
+      <li>a list of your 5 most recent notes (topic, the first 80 characters of the note, page title and link, and whether it saved successfully), shown in the popup;</li>
+      <li>notes waiting to be retried (for example when you were offline or the AI provider was unavailable), kept only until they are saved;</li>
+      <li>the position of your last saved note, so "Undo last note" can remove it.</li>
+    </ul>
+
+    <h2>What we do not do</h2>
+    <ul>
+      <li>We do not run any server, and we do not collect analytics, usage statistics or crash reports.</li>
+      <li>We do not sell, rent or share your data with anyone.</li>
+      <li>We do not use your data for advertising or for anything unrelated to saving your notes.</li>
+      <li>The extension does not load or run code from the internet.</li>
+    </ul>
+
+    <h2>Your control over your data</h2>
+    <ul>
+      <li><strong>Your notes</strong> live in your own Google Docs. You can edit or delete them at any time in Google Docs or Google Drive.</li>
+      <li><strong>Recent notes list:</strong> clear it at any time with <strong>Clear</strong> in the popup.</li>
+      <li><strong>Google access:</strong> click <strong>Disconnect</strong> in Settings, or remove "Add to Notes" at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      <li><strong>AI provider access:</strong> delete your API key in Settings, or revoke the key in your provider's dashboard.</li>
+      <li><strong>Everything else:</strong> removing the extension from Chrome deletes all of its locally stored data.</li>
+    </ul>
+
+    <h2>Voice notes (coming soon)</h2>
+    <p>Voice notes are not available yet. When they are added, this policy will be updated before release to explain how speech is handled. Chrome's built-in speech recognition, which voice notes will use, sends audio to Google to turn it into text.</p>
+
+    <h2>Children</h2>
+    <p>Add to Notes is not directed at children under 13, and we do not knowingly collect any information from them.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If the way the extension handles data changes, this page will be updated and the "Last updated" date changed before the new version is released. Significant changes will also be mentioned in the extension's Chrome Web Store listing.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>Questions about this policy or your data: <a href="mailto:ashish1.sharma@gmail.com">ashish1.sharma@gmail.com</a></p>
+    <p>Developer: Ashish Sharma</p>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>© 2026 Ashish Sharma</span>
+      <a href="./">Home</a>
+      <a href="mailto:ashish1.sharma@gmail.com">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>

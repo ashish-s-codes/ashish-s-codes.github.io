@@ -3,14 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Add to Notes</title>
-  <!-- Root of ashish-s-codes.github.io. This repository exists so Google
-       Search Console can verify the domain (its verification file sits next
-       to this page). Visitors are forwarded to the Add to Notes homepage. -->
-  <meta http-equiv="refresh" content="0; url=https://ashish-s-codes.github.io/add-to-notes-extn/" />
-  <link rel="canonical" href="https://ashish-s-codes.github.io/add-to-notes-extn/" />
+  <title>Add to Notes: save what you read to your Google Doc</title>
+  <meta name="description" content="Add to Notes is a Chrome extension that saves text you select on any web page into your own Google Doc, with its source link and a short AI explanation." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="site.css" />
 </head>
 <body>
-  <p>Redirecting to <a href="https://ashish-s-codes.github.io/add-to-notes-extn/">Add to Notes</a>…</p>
+  <header class="site">
+    <div class="wrap">
+      <img src="icon128.png" alt="" />
+      <a class="brand" href="./">Add to Notes</a>
+      <nav>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <img src="icon128.png" alt="Add to Notes icon: white A+ on a black square" />
+      <div>
+        <h1>Add to Notes</h1>
+        <p>Save what you read on the web into your own Google Doc, with its source and a simple explanation.</p>
+      </div>
+    </section>
+
+    <p><span class="badge">Chrome extension</span> <span class="badge">Coming soon to the Chrome Web Store</span></p>
+
+    <p>Add to Notes is a Chrome extension. Select text on any web page, right-click and choose <strong>Add to my notes</strong> (or press <strong>Alt+N</strong>). The text is added to a Google Doc in your own Google account, together with the page it came from and a short, plain-language explanation written by the AI provider you choose.</p>
+
+    <h2>What a saved note looks like</h2>
+    <div class="card sample" aria-label="Example of a saved note">
+      <p><strong>Date:</strong> 23 Sep 2026, 4:32 PM</p>
+      <p><strong>Topic:</strong> How photosynthesis works</p>
+      <div class="gap"></div>
+      <p><strong>Note:</strong></p>
+      <p>Plants turn <strong>light energy</strong> into chemical energy stored in sugars.</p>
+      <div class="gap"></div>
+      <p><strong>Source:</strong> Photosynthesis – Encyclopedia (<span class="sample-link">https://example.org/photosynthesis</span>)</p>
+      <div class="gap"></div>
+      <p><strong>Simple explanation:</strong> Plants use sunlight to make their own food. They capture light and use it to build sugar, which gives them energy to grow.</p>
+      <div class="rule"></div>
+    </div>
+
+    <h2>Features</h2>
+    <ul>
+      <li><strong>Works on any website</strong>, including YouTube, where the saved link jumps back to the exact second you were watching.</li>
+      <li><strong>Keeps formatting:</strong> bold, italics, links, and bullet or numbered lists come through as they were.</li>
+      <li><strong>Your choice of AI:</strong> Claude, OpenAI, Gemini or OpenRouter, using your own API key, with an optional fallback to a second provider.</li>
+      <li><strong>Multiple documents:</strong> keep separate documents (for example "Work" and "Study") and switch with one click.</li>
+      <li><strong>Never loses a note:</strong> if you're offline or the AI is unavailable, the note is saved and completed automatically later.</li>
+      <li><strong>Undo</strong> the last note and see your recent notes from the toolbar.</li>
+      <li><strong>Voice notes are coming soon.</strong> Stay tuned!</li>
+    </ul>
+
+    <h2>How to use it</h2>
+    <ol>
+      <li>Install the extension, open its <strong>Settings</strong>, connect your Google account and create a notes document.</li>
+      <li>Optional: choose an AI provider and paste your own API key (a separate key with a spending limit is recommended).</li>
+      <li>On any page, select text, then right-click <strong>Add to my notes</strong> or press <strong>Alt+N</strong>.</li>
+    </ol>
+
+    <h2>Privacy in one paragraph</h2>
+    <p>Add to Notes has no servers of its own. Your notes go straight from your browser to your own Google Doc and, if you use AI explanations, to the AI provider you chose. Your API keys and settings stay on your device. The extension can only access the documents it created for you, never the rest of your Google Drive, and it reads a page only at the moment you save from it. No tracking, no analytics, no ads. Read the full <a href="privacy.html">privacy policy</a>.</p>
+
+    <h2 id="contact">Contact and support</h2>
+    <p>Questions, bugs or suggestions: <a href="mailto:ashish1.sharma@gmail.com">ashish1.sharma@gmail.com</a></p>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>© 2026 Ashish Sharma</span>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="mailto:ashish1.sharma@gmail.com">Contact</a>
+    </div>
+  </footer>
 </body>
 </html>
